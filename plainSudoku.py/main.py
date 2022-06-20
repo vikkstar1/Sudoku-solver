@@ -30,6 +30,7 @@ def search_empty(b):
         for j in range(len(b[0])):
             if b[i][j] == 0:
                 return (i , j)  #returns the index of the empty cell in the grid
+    return None
 
 def is_valid(b,num,pos):                
     for i in range(len(b[0])):                      
@@ -49,3 +50,5 @@ def is_valid(b,num,pos):
                 return False
 
     return True 
+
+draw_sudoku(board)
